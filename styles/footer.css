@@ -2,15 +2,17 @@
     background-color: var(--main-brand-color);
     height: 5rem;
     width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .footer__list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto; /* Centra horizontalmente */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Centra verticalmente */
     display: flex;
     gap: 40px;
     max-width: 300px;
