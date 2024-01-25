@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--main-brand-color);
+    background-color: var(--secondary-brand-color);
     height: 5rem;
     width: 100%;
     position: relative;
@@ -21,6 +21,6 @@
 }
 
 .footer__list li i{
-    color: var(--secondary-brand-color);
+    color: var(--main-brand-color);
     font-size: 30px;
 }

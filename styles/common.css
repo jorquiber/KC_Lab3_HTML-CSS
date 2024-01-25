@@ -1,11 +1,11 @@
 :root {
     --bg-color: #FFF;
-    --main-text-color: #FFF;
-    --secondary-text-color: #535353;
-    --main-brand-color: #008b20;
-    --secondary-brand-color: #FFF;
+    --main-text-color: #535353;
+    --secondary-text-color: #FFF;
+    --main-brand-color: #FFF;
+    --secondary-brand-color: #008b20;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 * {
@@ -14,5 +14,18 @@
 
 .body {
     color: var(--main-text-color);
-    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.presentation {
+    text-align: justify;
 }

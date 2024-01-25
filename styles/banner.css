@@ -1,0 +1,19 @@
+.banner {
+    text-align: center;
+    position: relative;
+}
+
+.banner__image {
+    width: 100%;
+}
+
+.banner__content {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: var(--secondary-text-color);
+    background: #008b2080; /* Fondo semitransparente para mejorar la visibilidad del texto */
+    width: 100%;
+}
+
