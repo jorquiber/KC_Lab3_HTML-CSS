@@ -1,0 +1,73 @@
+.form .btn{
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-brand-color);
+    padding: 0.8rem;
+    border: 1px solid var(--secondary-brand-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form .btn.btn--secondary {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+}
+
+.form__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.form__element.form__element--fieldset legend{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.form__element.form__element--fieldset {
+    border: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.form__element__radio__list {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 5px;
+    padding: 16px 12px;
+    border: none;
+    background-color: var(--main-text-color);
+    color: var(--secondary-text-color);
+}
+
+.form__element__radio__list div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+}
+
+.form__element.form__element--checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+}
+
+.form__element.form__element--checkbox .form__label {
+    margin: 0;
+}
+
+
+.form__label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.form__input{
+    border-radius: 5px;
+    padding: 16px 12px;
+    border: none;
+    background-color: var(--main-text-color);
+    color: var(--secondary-text-color);
+}
+

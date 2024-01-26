@@ -20,6 +20,14 @@ html {
     scroll-behavior: smooth;
 }
 
+#contacto {
+    scroll-margin-top: 129px; 
+}
+
+#skills {
+    scroll-margin-top: 129px; 
+}
+
 .main {
     max-width: 1100px;
     margin: 0 auto;
@@ -29,3 +37,4 @@ html {
 .presentation {
     text-align: justify;
 }
+

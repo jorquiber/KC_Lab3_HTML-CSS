@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 
 <body class="body">
@@ -28,7 +29,7 @@
                         <a class="btn web" href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a class="btn web" href="">Contacto</a>
+                        <a class="btn web" href="#contacto">Contacto</a>
                     </li>
                     <li>
                         <a class="btn" href="">Menu</a>
@@ -67,16 +68,86 @@
                 </ul>
             </div>
         </section>
+        <!-- banner -->
         <section class="banner">
             <picture>
-            <source srcset="assets/Principal/palmerin-1248x698.jpg" media="(width > 768px)">
-            <img class="banner__image" src="assets/Principal/palmerin-501x698.jpg" alt="Palmerin en la grada">
+                <source srcset="assets/Principal/palmerin-1248x698.jpg" media="(width > 768px)">
+                <img class="banner__image" src="assets/Principal/palmerin-501x698.jpg" alt="Palmerin en la grada">
                 <div class="banner__content">
                     <h2>Palmerín, la leyenda de Heliópolis</h2>
                 </div>
             </picture>
         </section>
-        <section class="form"></section>
+        <!-- form -->
+        <h2 id="contacto">Formulario de contacto</h2>
+        <section class="form">
+            <form method="post" action="/register">
+                <div class="form__element">
+                    <label class="form__label" for="nombre">Nombre:</label>
+                    <input class="form__input" name="name" id="nombre" placeholder="Introduce tu nombre" required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="apellidos">Apellidos:</label>
+                    <input class="form__input" name="surname" id="apellidos" placeholder="Introduce tus apellidos"
+                        required>
+                </div>
+                <div class="form__element">
+                    <label class="form__label" for="telefono">Número de teléfono:</label>
+                    <input class="form__input" type="tel" id="phone" name="telefono" required placeholder="654123789"
+                        pattern="[0-9]{9}" title="Format 654123789">
+                </div>
+
+                <div class="form__element">
+                    <label class="form__label" for="usuario">Github username:</label>
+                    <input class="form__input" name="username" id="usuario" placeholder="@username" pattern="^@[^\s]"
+                        title="Format @username" required>
+                </div>
+
+                <fieldset class="form__element form__element--fieldset">
+                    <legend>¿Cómo me conociste?</legend>
+                    <div class="form__element__radio__list">
+                        <div>
+                            <input type="radio" id="university" name="knownMethod" value="university" checked>
+                            <label for="university">Universidad</label>
+                        </div>
+                        <div > 
+                            <input type="radio" id="keepcoding" name="knownMethod" value="keepcoding">
+                            <label for="keepcoding">Keepcoding kick-off</label></div>
+                        <div>
+                            <input type="radio" id="school" name="knownMethod" value="school">
+                            <label for="school">Colegio</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="github" name="knownMethod" value="github">
+                            <label for="github">En github</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form__element">
+                    <label class="form__label" for="extraInfo">Más información</label>
+                    <textarea class="form__input" name="information" id="extraInfo"
+                        placeholder="¿Qué más quieres saber?" maxlength="180"></textarea>
+                </div>
+
+                <div class="form__element form__element--checkbox">
+                    <input class="form__input" type="checkbox" name="newsletter" id="newsletter" unchecked>
+                    <label class="form__label" for="newsletter">Quiero acceso a la newsletter</label>
+                </div>
+
+                <!--
+                    <div role="button" tabindex="0">Submit</div>
+                -->
+
+
+                <div>
+                    <!--  <button type="submit">Submit</button> -->
+                    <input class="btn btn--secondary" type="reset" value="Reset">
+                    <input class="btn" type="submit" value="Enviar"><!-- disabled -->
+                </div>
+
+            </form>
+        </section>
     </main>
 
 
