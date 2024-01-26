@@ -13,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, 0%);
     color: var(--secondary-text-color);
-    background: #008b2080; /* Fondo semitransparente para mejorar la visibilidad del texto */
+    background: #008b2080; 
     width: 100%;
 }
 

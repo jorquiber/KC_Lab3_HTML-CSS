@@ -10,7 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 10px;
+    padding-bottom: 10px;
+    gap: 5px;
 }
 
 .progress__content {
@@ -39,8 +40,9 @@ progress::-webkit-progress-value {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 10px;
+        column-gap: 10px;
         align-items: left;
         margin-bottom: 10px
     }
+
 }
