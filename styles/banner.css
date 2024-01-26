@@ -1,5 +1,4 @@
 .banner {
-    text-align: center;
     position: relative;
 }
 
@@ -9,11 +8,11 @@
 
 .banner__content {
     position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    top: 0;
+    left: 0;
     color: var(--secondary-text-color);
-    background: #008b2080; 
+    background: var(--opac-secondary-brand-color); 
     width: 100%;
+    text-align: center;
 }
 

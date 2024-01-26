@@ -1,10 +1,10 @@
 .form .btn{
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-brand-color);
     padding: 0.8rem;
     border: 1px solid var(--secondary-brand-color);
     border-radius: 5px;
     cursor: pointer;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-brand-color);
 }
 
 .form .btn.btn--secondary {
@@ -57,7 +57,6 @@
     margin: 0;
 }
 
-
 .form__label {
     margin-bottom: 10px;
     font-size: 1.2rem;
@@ -80,6 +79,7 @@
 @media (hover: hover) {
 .form .btn:hover {
         box-shadow: 0px 10px 10px 0px var(--secondary-brand-color);
+        font-weight: bold;
     }
 }
 

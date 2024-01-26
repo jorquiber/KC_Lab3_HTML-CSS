@@ -3,7 +3,8 @@
     --main-text-color: #535353;
     --secondary-text-color: #FFF;
     --main-brand-color: #FFF;
-    --secondary-brand-color: #008b20;
+    --secondary-brand-color: #00954c;
+    --opac-secondary-brand-color: #00954c80;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
@@ -26,9 +27,8 @@ html {
 
 .main {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 40px auto 100px auto;
     width: 90%;
-    margin-bottom: 100px;
 }
 
 h2 {

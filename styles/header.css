@@ -1,9 +1,10 @@
 .header {
-    background-color: var(--secondary-brand-color);
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: var(--secondary-brand-color);
+    box-shadow: 0px 9px 13px 8px var(--secondary-brand-color);
 }
 
 .header__box {
@@ -26,12 +27,13 @@
 
 .header__box__list li .btn {
     display: block;
-    color:var(--secondary-text-color);
+    color: var(--secondary-text-color);
     border: 1px solid var(--main-brand-color);
     padding: 0.8rem;
-    border-radius: 5px;
+    border-radius: 70px;
     text-decoration: none;
     font-size: 25px;
+    transition: background-color 1s, color 1s;
 }
 
 .header__box__list li .btn.web {
@@ -40,23 +42,27 @@
 
 .header__box__logo img {
     width: 90px;
+    padding: 5px 20px 0 0;
 }
 
 @media (hover: hover) {
-    .btn:hover {
+    .header__box__list li .btn:hover {
+        background-color: var(--main-brand-color);
+        color: var(--secondary-brand-color);
         font-weight: bold;
     }
 }
 
 @media(width > 768px) {
-    .header__box__list li .btn{
+    .header__box__list li .btn {
         display: none;
     }
-    .header__box__list li .btn.web{
+
+    .header__box__list li .btn.web {
         display: block;
-        padding: 0;
         border: 0;
     }
+
     .header__box__list {
         gap: 20px;
     }
