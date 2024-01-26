@@ -26,13 +26,11 @@
 }
 
 .header__box__list li .btn {
-    display: block;
     color: var(--secondary-text-color);
-    border: 1px solid var(--main-brand-color);
     padding: 0.8rem;
     border-radius: 70px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     transition: background-color 1s, color 1s;
 }
 
@@ -41,15 +39,19 @@
 }
 
 .header__box__logo img {
-    width: 90px;
+    width: 60px;
     padding: 5px 20px 0 0;
 }
 
 @media (hover: hover) {
-    .header__box__list li .btn:hover {
+    .header__box__list li .btn:hover{
         background-color: var(--main-brand-color);
         color: var(--secondary-brand-color);
         font-weight: bold;
+    }
+
+    .btn--menu:hover span{
+        background-color: var(--secondary-brand-color);
     }
 }
 
@@ -66,5 +68,19 @@
     .header__box__list {
         gap: 20px;
     }
+}
 
+.btn--menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.btn--menu span {
+    width: 35px;
+    height: 100%;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: var(--main-brand-color);
+    transition: background-color 1s;    
 }

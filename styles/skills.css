@@ -24,7 +24,6 @@
     border-radius: 15px;
     border: 1px solid var(--secondary-brand-color);
     padding: 4px;
-    background-color: var(--main-text-color);
     background: var(--main-brand-color);
 }
 
