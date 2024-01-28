@@ -71,12 +71,12 @@
 }
 
 .btn--menu{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    max-width: 59px;
 }
 
 .btn--menu span {
+    display: block;
+    margin-bottom: 5px;
     width: 35px;
     height: 100%;
     border-radius: 15px;
@@ -84,3 +84,7 @@
     background-color: var(--main-brand-color);
     transition: background-color 1s;    
 }
+
+.btn--menu span:last-child {
+    margin-bottom: 0;
+  }

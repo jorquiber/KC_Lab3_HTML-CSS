@@ -1,0 +1,41 @@
+
+.menu__list {
+    display: none;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.menu__checkbox:checked~ul {
+    display: block;
+}
+
+.menu__checkbox {
+    display: none;
+}
+
+.menu__list li {
+    list-style: none;
+}
+
+.menu__list li a {
+    display: inline-block;
+    color: var(--secondary-text-color);
+    background-color: var(--secondary-brand-color);
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 15px;
+    width: fit-content;
+    border-radius: 70px;
+}
+
+.menu__list li a:hover {
+    background-color: var(--main-brand-color);
+    color: var(--secondary-brand-color);
+    font-weight: bold;
+}
+
+@media(width > 768px) {
+    .menu__list li a{
+        display: none;
+    }
+}

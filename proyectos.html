@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/proyectos.css">
+    <link rel="stylesheet" href="styles/burger.css">
 </head>
 
 <body class="body">
@@ -24,7 +25,7 @@
         <div class="header__box">
             <ul class="header__box__list">
                 <li>
-                    <a class="btn web" href="">Proyectos</a>
+                    <a class="btn web" href="proyectos.html">Proyectos</a>
                 </li>
                 <li>
                     <a class="btn web" href="index.html#skills">Skills</a>
@@ -33,11 +34,25 @@
                     <a class="btn web" href="index.html#contacto">Contacto</a>
                 </li>
                 <li>
-                    <a class="btn btn--menu" href="">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
+                    <input class="menu__checkbox" type="checkbox" id="menu">
+                    <label for="menu">
+                        <div class="btn btn--menu" href="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                    <ul class="menu__list">
+                        <li href="#skills">
+                            <a href="proyectos.html">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="index.html#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <div class="header__box__logo">
