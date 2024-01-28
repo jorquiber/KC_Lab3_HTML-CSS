@@ -46,10 +46,10 @@
                             <a href="proyectos.html">Proyectos</a>
                         </li>
                         <li>
-                            <a href="#skills">Skills</a>
+                            <a href="index.html#skills">Skills</a>
                         </li>
                         <li>
-                            <a href="#contacto">Contacto</a>
+                            <a href="index.html#contacto">Contacto</a>
                         </li>
                     </ul>
                 </li>
@@ -144,22 +144,22 @@
             <form method="post" action="/register">
                 <div class="form__element item">
                     <label class="form__label" for="nombre">Nombre:</label>
-                    <input class="form__input" name="name" id="nombre" placeholder="Introduce tu nombre" required>
+                    <input class="form__input" type="text" name="name" id="nombre" placeholder="Introduce tu nombre" required>
                 </div>
                 <div class="form__element item">
                     <label class="form__label" for="apellidos">Apellidos:</label>
-                    <input class="form__input" name="surname" id="apellidos" placeholder="Introduce tus apellidos"
+                    <input class="form__input" type="text" name="surname" id="apellidos" placeholder="Introduce tus apellidos required"
                         required>
                 </div>
                 <div class="form__element item">
                     <label class="form__label" for="telefono">Número de teléfono:</label>
-                    <input class="form__input" type="tel" id="phone" name="telefono" required placeholder="654123789"
-                        pattern="[0-9]{9}" title="Format 654123789">
+                    <input class="form__input" type="tel" name="phone" id="telefono" placeholder="654123789"
+                        pattern="[0-9]{9}" title="Format 654123789" required>
                 </div>
 
                 <div class="form__element item">
                     <label class="form__label" for="usuario">Github username:</label>
-                    <input class="form__input" name="username" id="usuario" placeholder="@username" pattern="@[^\s]+"
+                    <input class="form__input" type="text" name="username" id="usuario" placeholder="@username" pattern="@[^\s]+"
                         title="Format @username" required>
                 </div>
 
