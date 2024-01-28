@@ -28,6 +28,7 @@
 .header__box__list li .btn {
     color: var(--secondary-text-color);
     padding: 0.8rem;
+    margin: 9.7px 0;
     border-radius: 70px;
     text-decoration: none;
     font-size: 20px;
